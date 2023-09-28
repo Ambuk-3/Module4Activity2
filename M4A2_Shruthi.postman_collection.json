@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "a8423c5b-fa08-4b86-b1a3-ade26134a02b",
+		"name": "M4A2_Shruthi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29779327"
+	},
+	"item": [
+		{
+			"name": "Get ALL lOAN",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/loans",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"loans"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get LOAN by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/loans/65160171d08bc5e508a482ca",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"loans",
+						"65160171d08bc5e508a482ca"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Loan",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerName\" : \"Cooper\",\r\n    \"phoneNumber\": 6682228199,\r\n    \"address\": \"NY Street\",\r\n    \"loanAmount\": 0000,\r\n    \"interest\": 4,\r\n    \"loanTermYears\": 6,\r\n    \"loanType\": \"Auto\",\r\n    \"description\": \"Auto Insurance\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/loans/6515fd03d08bc5e508a482c8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"loans",
+						"6515fd03d08bc5e508a482c8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update loan by ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerName\" : \"Cooper\",\r\n    \"phoneNumber\": 66112228199,\r\n    \"address\": \"St John Street\",\r\n    \"loanAmount\": 20000,\r\n    \"interest\": 4,\r\n    \"loanTermYears\": 6,\r\n    \"loanType\": \"Auto\",\r\n    \"description\": \"Auto Insurance\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/loans/65160171d08bc5e508a482ca",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"loans",
+						"65160171d08bc5e508a482ca"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete loan by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/loans/65160171d08bc5e508a482ca",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"loans",
+						"65160171d08bc5e508a482ca"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
