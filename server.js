@@ -24,6 +24,12 @@ app.listen(port, () => {
 const loanRoute = require('./routes/loanRoutes');
 app.use('/loans', loanRoute);
 
+const customerRouter = require('./routes/customerRoutes');
+app.use('/customers', customerRouter);
+
+const loanLedgerRouter = require('./routes/loanLedgerRoutes');
+app.use('/loanledger', loanLedgerRouter);
+
 //connecting to the database
 const mongoose = require('mongoose');
 //asynchronous DB connection with parameterized DB connection string
