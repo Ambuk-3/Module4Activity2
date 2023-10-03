@@ -1,0 +1,18 @@
+{
+	"info": {
+		"_postman_id": "ddf3c192-6d9a-44a8-b803-0c4202c15f93",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29993902"
+	},
+	"item": [
+		{
+			"name": "M4A2_AMBUK_REHANI",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
